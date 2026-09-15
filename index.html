@@ -9,7 +9,6 @@
 <body class="bg-slate-900 text-slate-200 font-sans antialiased">
     <div class="max-w-4xl mx-auto px-4 py-8 md:py-12">
         
-        <!-- Header con Foto de Fondo -->
         <header class="relative bg-slate-900 bg-cover bg-center rounded-3xl overflow-hidden mb-12 shadow-2xl border border-slate-800" style="background-image: url('./fondo.jpg');">
             <div class="absolute inset-0 bg-slate-950/75"></div>
             
@@ -23,7 +22,6 @@
             </div>
         </header>
 
-        <!-- Introducción -->
         <section class="bg-slate-800 rounded-2xl p-6 md:p-8 shadow-lg border border-slate-700 mb-10">
             <h2 class="text-2xl font-bold text-white mb-4">El ruido no es fiesta</h2>
             <p class="text-slate-300 mb-4 text-lg">
@@ -34,7 +32,6 @@
             </p>
         </section>
 
-        <!-- SECCIÓN: OTROS MUNICIPIOS -->
         <section class="bg-slate-800/70 rounded-2xl p-6 md:p-8 shadow-lg border border-blue-900/50 mb-10">
             <div class="flex items-center mb-4">
                 <svg class="w-8 h-8 text-blue-400 mr-3 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
@@ -54,14 +51,12 @@
             </p>
         </section>
 
-        <!-- Pasos a seguir -->
         <section class="mb-10">
             <h2 class="text-2xl font-bold text-white mb-2 text-center">¿Cómo puedes ayudar?</h2>
             <p class="text-slate-400 text-center mb-6">Sigue estos pasos para unirte a la reclamación oficial.</p>
             
             <div class="grid gap-6 sm:grid-cols-2">
                 
-                <!-- Paso 1 -->
                 <div class="bg-slate-800 rounded-xl p-6 shadow-lg border border-slate-700 flex flex-col items-center text-center">
                     <div class="w-12 h-12 bg-blue-900/50 text-blue-400 rounded-full flex items-center justify-center font-bold text-xl mb-4">1</div>
                     <h3 class="text-lg font-bold text-white mb-2">Firma la petición</h3>
@@ -71,18 +66,15 @@
                     </a>
                 </div>
 
-                <!-- Paso 2: AQUÍ ESTÁ EL ARREGLO DEL PDF -->
                 <div class="bg-slate-800 rounded-xl p-6 shadow-lg border border-slate-700 flex flex-col items-center text-center">
                     <div class="w-12 h-12 bg-red-900/50 text-red-400 rounded-full flex items-center justify-center font-bold text-xl mb-4">2</div>
                     <h3 class="text-lg font-bold text-white mb-2">Descarga el escrito</h3>
                     <p class="text-slate-300 mb-4 flex-grow">Descarga el modelo de queja formal basado en las ordenanzas municipales.</p>
-                    <!-- He cambiado el enlace para que coincida exactamente con tu archivo de GitHub -->
-                    <a href="Escrito_Queja_Ayuntamiento_Tocina.pdf" download class="w-full bg-red-600 hover:bg-red-500 text-white font-bold py-2 px-4 rounded-lg transition-colors">
+                    <a href="Escrito_Queja_Ayuntamiento_Tocina.pdf" download onclick="const btn = this; const originalText = btn.innerText; btn.innerText = '¡Descargando...!'; setTimeout(() => btn.innerText = originalText, 3000);" class="w-full bg-red-600 hover:bg-red-500 text-white font-bold py-2 px-4 rounded-lg transition-colors transition-all duration-300">
                         Descargar PDF
                     </a>
                 </div>
 
-                <!-- Paso 3 -->
                 <div class="bg-slate-800 rounded-xl p-6 shadow-lg border border-slate-700 flex flex-col items-center text-center">
                     <div class="w-12 h-12 bg-green-900/50 text-green-400 rounded-full flex items-center justify-center font-bold text-xl mb-4">3</div>
                     <h3 class="text-lg font-bold text-white mb-2">Presenta tu queja</h3>
@@ -92,7 +84,6 @@
                     </a>
                 </div>
 
-                <!-- Paso 4 -->
                 <div class="bg-slate-800 rounded-xl p-6 shadow-lg border border-slate-700 flex flex-col items-center text-center">
                     <div class="w-12 h-12 bg-amber-900/50 text-amber-400 rounded-full flex items-center justify-center font-bold text-xl mb-4">4</div>
                     <h3 class="text-lg font-bold text-white mb-2">Lee la ordenanza</h3>
@@ -105,11 +96,10 @@
             </div>
         </section>
 
-        <!-- Footer y Redes -->
         <footer class="text-center text-slate-400 text-sm mt-12 border-t border-slate-800 pt-8 pb-8">
             
-            <!-- Botones Sociales -->
             <div class="mb-8 flex flex-col sm:flex-row justify-center items-center gap-4">
+                
                 <a href="https://www.facebook.com/share/p/19AEREzphJ/" target="_blank" rel="noopener noreferrer" class="inline-flex items-center justify-center px-6 py-3 bg-[#1877F2] hover:bg-[#166FE5] text-white font-bold rounded-full transition-colors shadow-[0_0_15px_rgba(24,119,242,0.3)] w-full sm:w-auto">
                     <svg class="w-6 h-6 mr-3" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.469h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.469h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
                     Ver en Facebook
@@ -119,13 +109,12 @@
                     <svg class="w-6 h-6 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8.684 13.342C8.886 12.938 9 12.482 9 12c0-.482-.114-.938-.316-1.342m0 2.684a3 3 0 110-5.368m0 5.368l5.662 3.397m-5.662-3.397a3 3 0 00-3.16 0m3.16 0l5.662-3.397M15.316 8.658a3 3 0 110-5.368 3 3 0 010 5.368zM15.316 15.342a3 3 0 110 5.368 3 3 0 010-5.368z"></path></svg>
                     Compartir web
                 </button>
+
             </div>
 
-            <!-- Info Contacto -->
             <p class="font-medium text-slate-300">Plataforma Vecinal por el Descanso - Tocina y Los Rosales</p>
             <p class="mt-2 mb-6">Contacto: <a href="mailto:descanso.tocina.losrosales@proton.me" class="text-blue-400 hover:underline">descanso.tocina.losrosales@proton.me</a></p>
 
-            <!-- Textos Legales Blindados -->
             <div class="mt-8 pt-6 border-t border-slate-800 text-xs text-slate-500 max-w-3xl mx-auto text-left space-y-3 px-4">
                 <p><strong class="text-slate-400 uppercase tracking-wider">Aviso Legal y Política de Privacidad</strong></p>
                 <p>Esta plataforma digital tiene una finalidad estrictamente informativa y de coordinación para la reivindicación vecinal pacífica amparada en el derecho fundamental de petición y libertad de expresión. No representa a ningún partido político ni entidad con fines de lucro.</p>
