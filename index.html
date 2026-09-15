@@ -6,7 +6,6 @@
     <title>Plataforma Vecinal por el Descanso - Tocina y Los Rosales</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
-        /* Animación suave para el botón de descarga */
         .pulse-button {
             animation: pulse 2s infinite;
         }
@@ -15,7 +14,6 @@
             70% { transform: scale(1.05); box-shadow: 0 0 0 15px rgba(239, 68, 68, 0); }
             100% { transform: scale(1); box-shadow: 0 0 0 0 rgba(239, 68, 68, 0); }
         }
-        /* Capa oscura para que el texto resalte sobre la foto */
         .bg-overlay {
             background-color: rgba(15, 23, 42, 0.75); 
         }
@@ -23,8 +21,10 @@
 </head>
 <body class="bg-slate-900 text-gray-100 font-sans antialiased">
 
+    <!-- Cabecera Principal con la Foto de Fondo -->
     <header class="relative bg-slate-900 bg-cover bg-center" style="background-image: url('./fondo.jpg');">
-        <div class="absolute inset-0 bg-overlay"></div> <div class="relative z-10 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 pt-20 pb-16 text-center">
+        <div class="absolute inset-0 bg-overlay"></div>
+        <div class="relative z-10 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 pt-20 pb-16 text-center">
             <h1 class="text-4xl md:text-6xl font-extrabold tracking-tight text-white mb-4 drop-shadow-lg">
                 EL RUIDO <span class="text-red-500">NO ES FIESTA.</span><br>EXIGIMOS DESCANSAR.
             </h1>
@@ -34,41 +34,65 @@
         </div>
     </header>
 
+    <!-- Contenido Central -->
     <main class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
         
-        <div class="bg-slate-800 rounded-2xl shadow-xl border border-slate-700 p-6 md:p-8 mb-10 text-center text-lg md:text-xl text-slate-200 leading-relaxed">
+        <!-- Tarjeta del Mensaje Principal -->
+        <div class="bg-slate-800 rounded-2xl shadow-xl border border-slate-700 p-6 md:p-8 mb-8 text-center text-lg md:text-xl text-slate-200 leading-relaxed">
             <p class="mb-4">
-                El Bando Municipal prohíbe la pirotecnia desde las 00:00h, pero nuestro Ayuntamiento se niega a actuar de madrugada. Ancianos, niños con autismo, mascotas y trabajadores están sufriendo las consecuencias.
+                El Ayuntamiento permite la pirotecnia en festivos y procesiones, pero <strong>se está incumpliendo sistemáticamente la normativa</strong> permitiendo detonaciones de madrugada y en días previos no festivos.
             </p>
-            <p class="font-bold text-white">
+            <p class="mb-4">
+                Ancianos, niños con autismo, mascotas y trabajadores están sufriendo las consecuencias de esta inactividad municipal.
+            </p>
+            <p class="font-bold text-white text-xl mt-6">
                 Ya es hora de que el pueblo hable. Unámonos para exigir nuestro derecho al descanso por la vía oficial.
             </p>
         </div>
 
+        <!-- Tarjeta de la Normativa Oficial -->
+        <div class="bg-slate-900 rounded-2xl shadow-inner border border-slate-700 p-6 md:p-8 mb-10">
+            <h2 class="text-2xl font-bold text-white mb-4 text-center">¿Qué dice la normativa oficial?</h2>
+            <blockquote class="border-l-4 border-red-500 pl-4 italic text-slate-300 mb-6 bg-slate-800/50 p-4 rounded-r-lg">
+                "Solo está permitido explosionar pirotecnia los días de fiesta local [...] y desde la Noche Buena hasta el día de Reyes. Solo de 7:00 h a 00:00 h. [...] En caso de procesión, se extenderá el horario hasta la recogida."
+            </blockquote>
+            <div class="text-center">
+                <!-- Cambiaremos este enlace cuando lo tengamos -->
+                <a href="ENLACE_AL_BANDO_AQUI" target="_blank" class="inline-flex items-center text-blue-400 hover:text-blue-300 font-medium transition-colors">
+                    <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg>
+                    Ver el Bando Municipal original
+                </a>
+            </div>
+        </div>
+
+        <!-- Botones de Acción -->
         <div class="flex flex-col items-center gap-6 mb-12">
             
+            <!-- Botón de Firmas Change.org -->
             <div class="text-center w-full max-w-sm">
                 <a href="#" target="_blank"
                    class="w-full inline-flex items-center justify-center px-6 py-4 text-lg font-bold text-slate-900 bg-yellow-400 rounded-full hover:bg-yellow-300 transition-colors shadow-[0_0_15px_rgba(250,204,21,0.4)]">
-                    <svg class="w-6 h-6 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15.232 5.232l3.536 3.536m-2.036-5.036a2.5 2.5 0 113.536 3.536L6.5 21.036H3v-3.572L16.732 3.732z"></path></svg>
+                    <svg class="w-6 h-6 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15.232 5.232l3.536 3.536m-2.036-5.036a2.5 2.5 0 113.536 3.536L6.5 21.036H3v-3.572L16.732 3.732z"></path></svg>
                     FIRMAR PETICIÓN VECINAL
                 </a>
                 <p class="mt-3 text-sm text-yellow-500 font-medium">Únete a la recogida de firmas online</p>
             </div>
 
+            <!-- Botón de Descarga PDF -->
             <div class="text-center w-full max-w-sm">
                 <a href="./Escrito_Queja_Ayuntamiento_Tocina.pdf" download="Escrito_Queja_Ayuntamiento_Tocina.pdf" 
                    class="pulse-button w-full inline-flex items-center justify-center px-6 py-4 text-lg font-bold text-white bg-red-600 rounded-full hover:bg-red-500 transition-colors shadow-lg">
-                    <svg class="w-6 h-6 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"></path></svg>
+                    <svg class="w-6 h-6 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"></path></svg>
                     DESCARGAR ESCRITO OFICIAL
                 </a>
-                <p class="mt-3 text-sm text-slate-400">Descarga segura (PDF Oficial)</p>
+                <p class="mt-3 text-sm text-slate-400">Descarga segura (PDF actualizado)</p>
             </div>
 
+            <!-- Botón Sede Electrónica -->
             <div class="text-center w-full max-w-sm">
                 <a href="https://tocinalosrosales.sedelectronica.es/" target="_blank" rel="noopener noreferrer"
                    class="w-full inline-flex items-center justify-center px-6 py-4 text-lg font-bold text-slate-900 bg-white rounded-full hover:bg-slate-200 transition-colors shadow-lg border-2 border-transparent">
-                    <svg class="w-6 h-6 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg>
+                    <svg class="w-6 h-6 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg>
                     PRESENTAR QUEJA ONLINE
                 </a>
                 <p class="mt-3 text-sm text-slate-400">(Sede electrónica Ayto. de Tocina)</p>
@@ -76,9 +100,9 @@
 
         </div>
 
+        <!-- Instrucciones -->
         <div class="bg-slate-800 rounded-2xl shadow-xl border border-slate-700 p-6 md:p-8">
             <h3 class="text-2xl font-bold text-white mb-6 text-center">¿Qué tienes que hacer?</h3>
-            
             <div class="space-y-6">
                 <div class="flex items-start">
                     <div class="flex-shrink-0 flex items-center justify-center w-10 h-10 rounded-full bg-slate-700 text-white font-bold text-lg">1</div>
@@ -87,7 +111,6 @@
                         <p class="text-slate-400 mt-1">Usa el botón amarillo para dejar tu firma online y hacer presión vecinal.</p>
                     </div>
                 </div>
-
                 <div class="flex items-start">
                     <div class="flex-shrink-0 flex items-center justify-center w-10 h-10 rounded-full bg-slate-700 text-white font-bold text-lg">2</div>
                     <div class="ml-4">
@@ -95,7 +118,6 @@
                         <p class="text-slate-400 mt-1">Guarda el PDF (botón rojo) y rellénalo con tus datos y firma personal.</p>
                     </div>
                 </div>
-
                 <div class="flex items-start">
                     <div class="flex-shrink-0 flex items-center justify-center w-10 h-10 rounded-full bg-slate-700 text-white font-bold text-lg">3</div>
                     <div class="ml-4">
