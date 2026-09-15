@@ -11,7 +11,6 @@
         
         <!-- Header con Foto de Fondo -->
         <header class="relative bg-slate-900 bg-cover bg-center rounded-3xl overflow-hidden mb-12 shadow-2xl border border-slate-800" style="background-image: url('./fondo.jpg');">
-            <!-- Capa oscura semitransparente para que el texto resalte -->
             <div class="absolute inset-0 bg-slate-950/75"></div>
             
             <div class="relative z-10 px-4 py-16 md:py-24 text-center">
@@ -55,10 +54,11 @@
             </p>
         </section>
 
-        <!-- Pasos a seguir -->
+        <!-- Pasos a seguir (4 pasos) -->
         <section class="mb-10">
             <h2 class="text-2xl font-bold text-white mb-6 text-center">¿Cómo puedes ayudar?</h2>
-            <div class="grid gap-6 md:grid-cols-3">
+            
+            <div class="grid gap-6 sm:grid-cols-2">
                 
                 <!-- Paso 1 -->
                 <div class="bg-slate-800 rounded-xl p-6 shadow-lg border border-slate-700 flex flex-col items-center text-center">
@@ -70,9 +70,19 @@
                     </a>
                 </div>
 
-                <!-- Paso 2 -->
+                <!-- Paso 2: Ordenanza -->
                 <div class="bg-slate-800 rounded-xl p-6 shadow-lg border border-slate-700 flex flex-col items-center text-center">
-                    <div class="w-12 h-12 bg-red-900/50 text-red-400 rounded-full flex items-center justify-center font-bold text-xl mb-4">2</div>
+                    <div class="w-12 h-12 bg-amber-900/50 text-amber-400 rounded-full flex items-center justify-center font-bold text-xl mb-4">2</div>
+                    <h3 class="text-lg font-bold text-white mb-2">Lee la ordenanza</h3>
+                    <p class="text-slate-300 mb-4 flex-grow">Consulta el documento y la normativa municipal vigente.</p>
+                    <a href="https://www.tocinalosrosales.es/es/actualidad/noticias/BANDO-MUNICIPAL-SOBRE-COHETES-PIROTECNIA-Y-TOROS-DE-FUEGO/?urlBack=" target="_blank" class="w-full bg-amber-600 hover:bg-amber-500 text-white font-bold py-2 px-4 rounded-lg transition-colors">
+                        Ver normativa
+                    </a>
+                </div>
+
+                <!-- Paso 3 -->
+                <div class="bg-slate-800 rounded-xl p-6 shadow-lg border border-slate-700 flex flex-col items-center text-center">
+                    <div class="w-12 h-12 bg-red-900/50 text-red-400 rounded-full flex items-center justify-center font-bold text-xl mb-4">3</div>
                     <h3 class="text-lg font-bold text-white mb-2">Descarga el escrito</h3>
                     <p class="text-slate-300 mb-4 flex-grow">Descarga el modelo de queja formal basado en las ordenanzas municipales.</p>
                     <a href="queja-formal.pdf" download class="w-full bg-red-600 hover:bg-red-500 text-white font-bold py-2 px-4 rounded-lg transition-colors">
@@ -80,12 +90,12 @@
                     </a>
                 </div>
 
-                <!-- Paso 3 -->
+                <!-- Paso 4 -->
                 <div class="bg-slate-800 rounded-xl p-6 shadow-lg border border-slate-700 flex flex-col items-center text-center">
-                    <div class="w-12 h-12 bg-green-900/50 text-green-400 rounded-full flex items-center justify-center font-bold text-xl mb-4">3</div>
+                    <div class="w-12 h-12 bg-green-900/50 text-green-400 rounded-full flex items-center justify-center font-bold text-xl mb-4">4</div>
                     <h3 class="text-lg font-bold text-white mb-2">Presenta tu queja</h3>
                     <p class="text-slate-300 mb-4 flex-grow">Envíalo a través de la Sede Electrónica o entrégalo físicamente en el registro.</p>
-                    <a href="https://tocinaylosrosales.sedelectronica.es/" target="_blank" class="w-full bg-green-600 hover:bg-green-500 text-white font-bold py-2 px-4 rounded-lg transition-colors">
+                    <a href="https://tocina.sedelectronica.es/" target="_blank" class="w-full bg-green-600 hover:bg-green-500 text-white font-bold py-2 px-4 rounded-lg transition-colors">
                         Ir a la Sede
                     </a>
                 </div>
@@ -96,16 +106,13 @@
         <!-- Footer y Redes -->
         <footer class="text-center text-slate-400 text-sm mt-12 border-t border-slate-800 pt-8 pb-8">
             
-            <!-- Botones de Acción (Facebook y Compartir) -->
             <div class="mb-8 flex flex-col sm:flex-row justify-center items-center gap-4">
                 
-                <!-- Botón de Facebook -->
                 <a href="https://www.facebook.com/share/p/19AEREzphJ/" target="_blank" rel="noopener noreferrer" class="inline-flex items-center justify-center px-6 py-3 bg-[#1877F2] hover:bg-[#166FE5] text-white font-bold rounded-full transition-colors shadow-[0_0_15px_rgba(24,119,242,0.3)] w-full sm:w-auto">
                     <svg class="w-6 h-6 mr-3" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.469h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.469h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
                     Ver en Facebook
                 </a>
 
-                <!-- Botón de Compartir Web -->
                 <button onclick="if(navigator.share){navigator.share({title:'Plataforma Vecinal por el Descanso', text:'Firma la petición y únete a la reclamación por nuestro derecho al descanso en Tocina y Los Rosales.', url:window.location.href})}else{alert('Copia este enlace para compartir: ' + window.location.href)}" class="inline-flex items-center justify-center px-6 py-3 bg-emerald-600 hover:bg-emerald-500 text-white font-bold rounded-full transition-colors shadow-[0_0_15px_rgba(5,150,105,0.3)] w-full sm:w-auto cursor-pointer">
                     <svg class="w-6 h-6 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8.684 13.342C8.886 12.938 9 12.482 9 12c0-.482-.114-.938-.316-1.342m0 2.684a3 3 0 110-5.368m0 5.368l5.662 3.397m-5.662-3.397a3 3 0 00-3.16 0m3.16 0l5.662-3.397M15.316 8.658a3 3 0 110-5.368 3 3 0 010 5.368zM15.316 15.342a3 3 0 110 5.368 3 3 0 010-5.368z"></path></svg>
                     Compartir web
